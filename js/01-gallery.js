@@ -32,7 +32,7 @@ galleryListEl.addEventListener('click', event => {
   const lightbox = basicLightbox.create(
     `<img src="${event.target.src}" alt="${event.target.alt}">`
   );
-  event.target = lightbox.show();
+  lightbox.show();
 });
 
 makeGallery(galleryItems);
