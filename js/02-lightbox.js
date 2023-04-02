@@ -6,8 +6,8 @@ const galleryMarkup = [];
 
 function makeGallery(galleryObjects) {
   for (const galleryObject of galleryObjects) {
-    const galleryItemMarkup = `<li class="gallery__item>
-<a class="gallery__item" href="${galleryObject.original}">
+    const galleryItemMarkup = `<li>
+<a class="gallery__link" href="${galleryObject.original}">
   <img class="gallery__image" src="${galleryObject.preview}" alt="${galleryObject.description}" />
 </a>
 </li>`;
