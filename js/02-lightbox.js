@@ -18,3 +18,12 @@ function makeGallery(galleryObjects) {
 }
 
 makeGallery(galleryItems);
+
+var lightbox = new SimpleLightbox('.gallery a', {
+  captions: !0,
+  captionDelay: 250,
+  captionSelector: 'img',
+  captionType: 'attr',
+  captionsData: 'alt',
+  captionPosition: 'bottom',
+});
