@@ -33,6 +33,11 @@ galleryListEl.addEventListener('click', event => {
     `<img src="${event.target.src}" alt="${event.target.alt}">`
   );
   lightbox.show();
+  galleryListEl.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      lightbox.close();
+    }
+  });
 });
 
 makeGallery(galleryItems);
